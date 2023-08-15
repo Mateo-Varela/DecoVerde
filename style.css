@@ -1,0 +1,190 @@
+/* Estilos generales*/
+
+* {
+	box-sizing: border-box;
+
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	/*background: rgb(4,83,2);
+	background: linear-gradient(180deg, rgba(4,83,2,1) 0%, rgba(9,121,28,1) 35%, rgba(163,224,161,1) 100%); */  
+}
+
+/*Estilos Header*/
+
+header{
+	padding: 50px;
+	text-align: center;	
+	height: 300px;
+	border: 1px solid #000;
+	background: rgb(4,83,2);
+	background: linear-gradient(180deg, rgba(4,83,2,1) 0%, rgba(9,121,28,1) 35%, rgba(163,224,161,1) 100%);
+}
+
+/*Estilos titulos header*/
+
+h1{
+	margin-bottom: 0px;	
+	font-size: 10vh;
+	color: #000;
+}
+
+.subtitulo-header {
+	color: #000;	
+}
+
+/*Estilos contenido principal*/
+
+.container{
+	display: grid;
+	grid-template-columns: 500px 500px auto;
+	grid-template-rows: auto, auto, auto;
+	gap: 10px;
+	border-bottom: 1px solid #000;
+}
+
+.quienes-somos{
+
+}
+
+.objetivo {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+.dedicacion {
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+}
+
+/*Estilos imagenes principales*/
+
+.contenedor-imagen {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.foto-logo{
+	max-width: 100%;
+	width: 400px;
+	margin: 10px;
+	border-radius: 100px 20px 100px 20px;
+	border: 1px solid #685;
+}
+
+.imagen-objetivo {
+	max-width: 100%;	
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px 100px 20px 100px;
+	border: 1px solid #000;
+}
+
+.imagen-dedicacion {
+	max-width: 100%;	
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px 100px 20px 100px;
+}
+
+/*Estilos parrafos y titulos principales*/
+
+.titulo-parrafos {
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 6vh;
+	color: #00337C;
+}
+
+.primer-parrafo {
+	color: #000;
+	margin: 10px;
+	padding: 15px;
+	font-size: 20px;
+}
+
+.segundo-parrafo {
+	margin: 10px;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.tercer-parrafo {
+	margin: 10px;
+	padding: 10px;
+	font-size: 20px;
+}
+
+/*Estilo aside derecha*/
+
+.aside {
+	grid-column: 3 / 4;
+	grid-row: 1 / 3 span;
+	border-left: 1px solid #000;
+}
+
+.foto-aside {
+	max-width: 100%;
+	width: 300px;
+	margin: 10px;
+}
+
+h3 {
+	margin: 10px;
+}
+
+
+footer{
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+
+@media (max-width: 700px){
+
+	h1{
+		font-size: 6vh;
+	}
+
+	.titulo-parrafos {
+	margin-left: 0px;
+	text-align: center;
+}
+
+	.container {
+		display: flex;
+		flex-direction: column;	
+	}
+
+	.foto-logo{
+	width: 100%;
+	margin: 10px;
+	border-radius: 100px 20px 100px 20px;
+	border: 1px solid #685;
+}
+
+.imagen-objetivo {
+	width: 100%;	
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px 100px 20px 100px;
+	border: 1px solid #000;
+}
+
+.imagen-dedicacion {
+	width: 100%;	
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px 100px 20px 100px;
+}
+
+.contenedor-foto-aside {
+	text-align: center;
+}
+
+}
